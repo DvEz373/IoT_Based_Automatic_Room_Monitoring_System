@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>AUTOMATIC ROOM MONITORING SYSTEM</title>  
+<meta name="viewport" content="width=device-width, initial-scale=1">   
+<link rel="icon" type="image/png" href="favicon.png">   
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="style.css">
+
+    <script src="http://cdn.rawgit.com/Mikhus/canvas-gauges/gh-pages/download/2.1.7/all/gauge.min.js"></script>
+  </head>
+  <body>
+    <div class="topnav">
+      <h1>ROOM MONITORING SYSTEM</h1>
+    </div>
+    <div class="content">
+      <div class="card-grid">
+        <div class="card">
+          <p class="card-title">Heat Index Celcius</p>
+          <canvas id="gauge-heat-index-celcius"></canvas>
+        </div>
+        <div class="card">
+          <p class="card-title">Heat Index Fahrenheit</p>
+          <canvas id="gauge-heat-index-fahrenheit"></canvas>
+        </div>
+      </div>
+    </div>
+    <div class="content">
+      <div class="card-grid">
+        <div class="card">
+          <p class="card-title">Temperature Celcius</p>
+          <canvas id="gauge-temperature-celcius"></canvas>
+        </div>
+        <div class="card">
+          <p class="card-title">Humidity</p>
+          <canvas id="gauge-humidity"></canvas>
+        </div>
+      </div>
+    </div>
+    <div class="content">
+      <div class="card-grid">
+        <div class="card">
+          <p class="card-title">Temperature Fahrenheit</p>
+          <canvas id="gauge-temperature-fahrenheit"></canvas>
+        </div>
+        <div class="card">
+          <p class="card-title">Air Quality Level</p>
+          <canvas id="gauge-smoke"></canvas>
+        </div>
+      </div>
+    </div>
+    <div class="content">
+      <div class="card-grid">
+        <div class="card">
+          <p class="card-title">Air Pressure</p>
+          <canvas id="gauge-pressure"></canvas>
+        </div>
+        <div class="card">
+          <p class="card-title">Light Level</p>
+          <canvas id="gauge-light"></canvas>
+        </div>
+      </div>
+    </div>
+    <div class="content">
+      <div class="card-grid">
+        <div class="card">
+          <p class="card-title">Motion Detection</p>
+          <p class="card-title">PIR Sensor State</p>
+          <p id="statepir"><strong>%STATEPIR%</strong></p>  
+        </div>
+      </div>
+    </div>
+    <div class="content">
+      <div class="card-grid">
+        <div class="card">
+          <p class="card-title">Fire Detection</p>
+          <p class="card-title">Fire Sensor Status</p>
+          <p id="statefire"><strong>%STATEFIRE%</strong></p>
+        </div>
+      </div>
+    </div>    
+    <script src="script.js"></script>
+  </body>
+</html>
